@@ -1,0 +1,48 @@
+<html><!--this is the start of an HTML Document-->
+    <head><!--head section which includes necessary content-->
+        <meta charset="UTF-8"><!--ensures proper handling of characters-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--sets mode for compatibility-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--adjusts the website to the device being used, enables responsive design -->
+        <title>Portfolio</title><!--sets tab title-->
+        <link rel="stylesheet" href="style.css"> <!-- leads to external CSS stylesheet -->
+    </head><!--end of head-->
+
+    <body class="body3"><!--main content of the website-->
+        <nav><!--contains information about navigation bar-->
+            <div class="menu"><!--this holds navigation links-->
+                <a href="index.html">Home</a><!--this will lead to home page-->
+                <a href="about.html">About</a><!--this will lead to about page-->
+                <div class="subnav"><!--this contains subnavigation menu-->
+                    <button class="subnavbutton">Projects</button><!--this will show to projects options-->
+                    <div class = "subnavcontent"><!--this contains subnavigation contents-->
+                        <a href="photography.html" class="active">Photography</a><!--this will lead to photography page-->
+                        <a href="videoprojects.html">Video Projects</a><!--this will lead to video project page-->
+                        <a href="graphicdesign.html">Graphic Design</a><!--this will lead to graphic design page-->
+                    </div><!--end of subnavcontent div class-->
+                </div><!--end of subnav divclass-->
+                <a href="skills.html">Skills</a><!--this will lead to skills page -->
+                <a href="services.html">Work with Me</a><!--this will lead to work with me page-->
+            </div><!--end of div class menu-->
+        </nav><!--end of navigation part-->
+
+    <section class="photography"><!--contains main content section-->
+        <h1>PHOTOGRAPHY</h1><!--contains title-->
+        <div class = "image-container"><!--div class for CSS purposes-->
+            <div class="imageone"><!--div class for image one-->
+                <img src="Media/image 1.jpg" title="The Mosque" width="400" height="300"><!--source of image one-->
+                <p class="description">The Mosque<br>by <i>Ezekiel Brioso</i></p><!--description for image one-->
+            </div><!--closes imageone-->
+
+            <div class="imagetwo"><!--div class for image two-->
+                <img src="Media/image 2.PNG" title="Radisson Blu" width="400" height="300"><!--source of image two-->
+                <p class="description">Radisson Blu<br>by <i>Ezekiel Brioso</i></p><!--description for image two-->
+            </div><!--closes imagetwo-->
+
+            <div class="imagethree"><!--div class for image three-->
+                <img src="Media/image 3.jpg" alt="Purple skies" title="Purple Skies" width="400" height="300"><!--source of image three-->
+                <p class="description">Purple Skies<br>by <i>Ezekiel Brioso</i></p><!--description for image three-->
+            </div><!--closes imagethree-->
+        </div><!--closes image-container-->
+    </section><!--end of photography section-->
+    </body><!--end of body-->
+</html><!--end of HTML Document-->

@@ -1,0 +1,48 @@
+<html><!--this is the start of an HTML Document-->
+    <head><!--head section which includes necessary content-->
+        <meta charset="UTF-8"><!--ensures proper handling of characters-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--sets mode for compatibility-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--adjusts the website to the device being used, enables responsive design -->
+        <title>Portfolio</title><!--sets tab title-->
+        <link rel="stylesheet" href="style.css"> <!-- leads to external CSS stylesheet -->
+    </head><!--end of head-->
+
+    <body class="body4"><!--main content of the website-->
+        <nav><!--contains information about navigation bar-->
+            <div class="menu"><!--this holds navigation links-->
+                <a href="index.html">Home</a><!--this will lead to home page-->
+                <a href="about.html">About</a><!--this will lead to about page-->
+                <div class="subnav"><!--this contains subnavigation menu-->
+                    <button class="subnavbutton">Projects</button><!--this will show to projects options-->
+                    <div class = "subnavcontent"><!--this contains subnavigation contents-->
+                        <a href="photography.html">Photography</a><!--this will lead to photography page-->
+                        <a href="videoprojects.html" class="active">Video Projects</a><!--this will lead to video project page-->
+                        <a href="graphicdesign.html">Graphic Design</a><!--this will lead to graphic design page-->
+                    </div><!--end of subnavcontent div class-->
+                </div><!--end of subnav divclass-->
+                <a href="skills.html">Skills</a><!--this will lead to skills page -->
+                <a href="services.html">Work with Me</a><!--this will lead to work with me page-->
+            </div><!--end of div class menu-->
+        </nav><!--end of navigation part-->
+
+    <section class="videoprojects"><!--contains main content section-->
+        <h1>Video Portfolio</h1> <!--displays the text in Heading 1-->
+        <div class = "video-container"><!--for CSS Style purposes-->
+            <video autoplay loop poster="Media/1STVIDCOVER.png" controls><!--video poster source and autoplays-->
+                <source src="https://github.com/ezekielbrioso/ezekielbrioso.github.io/raw/main/Media/Creek%20-%201st%20Video.mp4" type="video/mp4"> <!--video source-->
+            </video><!--end of video-container-->
+        </div>
+        <div class = "video-container"><!--for CSS Style purposes-->
+            <video autoplay loop poster="Media/2NDVIDCOVER.PNG" controls><!--video poster source and autoplays-->
+                <source src="https://github.com/ezekielbrioso/ezekielbrioso.github.io/raw/main/Media/Salt%20-%202nd%20Video.mp4" type="video/mp4"> <!--video source-->
+            </video><!--end of video-container-->
+        </div>
+        <div class = "video-container"><!--for CSS Style purposes-->
+            <video autoplay loop poster="Media/3RDVIDCOVER.PNG" controls><!--video poster source and autoplays-->
+                <source src="https://github.com/ezekielbrioso/ezekielbrioso.github.io/raw/main/Media/Sharjah%20-%203rd%20Video.mp4" type="video/mp4"> <!--video source-->
+            </video><!--end of video-container-->
+        </div><!--closes video-container-->
+    </section><!--end of video projects section-->
+    </body><!--end of body-->
+</html><!--end of HTML Document-->
+

@@ -1,0 +1,46 @@
+<html><!--this is the start of an HTML Document-->
+    <head><!--head section which includes necessary content-->
+        <meta charset="UTF-8"><!--ensures proper handling of characters-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--sets mode for compatibility-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--adjusts the website to the device being used, enables responsive design -->
+        <title>Portfolio</title><!--sets tab title-->
+        <link rel="stylesheet" href="style.css"> <!-- leads to external CSS stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!--leads to css used for icons-->
+    </head><!--end of head-->
+
+    <body class="body7"><!--main content of the website-->
+        <nav><!--contains information about navigation bar-->
+            <div class="menu"><!--this holds navigation links-->
+                <a href="index.html">Home</a><!--this will lead to home page-->
+                <a href="about.html">About</a><!--this will lead to about page-->
+                <div class="subnav"><!--this contains subnavigation menu-->
+                    <button class="subnavbutton">Projects</button><!--this will show projects options-->
+                    <div class = "subnavcontent"><!--this contains subnavigation contents-->
+                        <a href="photography.html">Photography</a><!--this will lead to photography page-->
+                        <a href="videoprojects.html">Video Projects</a><!--this will lead to video project page-->
+                        <a href="graphicdesign.html">Graphic Design</a><!--this will lead to graphic design page-->
+                    </div><!--end of subnavcontent div class-->
+                </div><!--end of subnav divclass-->
+                <a href="skills.html">Skills</a><!--this will lead to skills page -->
+                <a href="services.html" class = "active">Work with Me</a><!--this will lead to work with me page-->
+            </div><!--end of div class menu-->
+        </nav><!--end of navigation part-->
+
+    <section class="services"><!--contains main section-->
+        <h1> WORK WITH ME </h1><!--contains title of the page shown using heading 1-->
+        <div id="id-card"><!--div id for id card-->
+            <div class="id-image"><!--div class for id-image used for CSS Styling-->
+                <img src = "Media/id image.jpg" alt = "id image"><!--source of image-->
+            </div><!--closes id-image-->
+            <div class="whatsapp"><!--contains whatsapp  info and icon-->
+                <p class="user">+971 54 337 9040</p><!--contains contact number-->
+                <i class="fa-brands fa-whatsapp" style="color: #484346;"></i><!--contains whatsapp icon-->
+            </div><!--closes whatsapp part-->
+            <div class="email"><!--contains email info and icon-->
+                <p class="user">kielbrioso05@gmail.com</p><!--contains email-->
+                <i class="fa-solid fa-envelope" style="color: #484346;"></i><!--contains email icon-->
+            </div><!--closes email part-->
+        </div><!--closes id-card part-->
+    </section><!--end of services section-->
+    </body><!--end of body-->
+</html><!--end of HTML Document-->

@@ -1,0 +1,691 @@
+/*NAVIGATION BAR*/
+.menu {
+  position: fixed; /*Fixes position*/
+  top: 0; /*Removes top space*/
+  width: 100%; /*Fixes Width*/
+  right: 50px; /*Adds 50px on the right*/
+  left:0px; /*Removes left space*/
+  display: flex; /*Flexes the position*/
+  justify-content: space-evenly; /*Puts space on the contents evenly*/
+  padding: 25px 10px; /*Adds padding*/
+  background-color: #4A4B44; /*Sets BG Color*/
+  font-family: Georgia, 'Times New Roman', Times, serif; /*Sets font*/
+  font-size: 18px; /*Sets font size*/
+  align-items: center; /*Align items in the center*/
+  gap: 2px; /*Sets gap*/
+  z-index: 1000; /*Sets z-index*/
+  margin:0; /*Removes default margin*/
+
+}
+
+.menu a {
+  color: #fff; /*Sets color*/
+  text-decoration: none; /*Removes text-decoration*/
+  padding: 0.3rem 0.5rem; /* Adjusts padding */
+  margin: 0 1px; /* Adjusts margins */
+  font-size: 18px; /* Adjust font size for smaller screens */
+
+}
+
+.menu a:hover {
+  background-color: #95978E; /*Sets background color*/
+  color:#232727; /*Sets text color*/
+}
+
+.menu a.active {
+  background-color: #95978E; /*Sets background color*/
+  color:#232727; /*Sets text color*/
+}
+
+.subnav {
+  position: relative; /*Sets position*/
+  display: inline-block; /*Fix display*/
+}
+
+.subnavbutton {
+  background-color: #4A4B44; /*Sets background color*/
+  color: #fff; /*Sets text color*/
+  padding: 0.5rem 1rem; /*Sets padding*/
+  border: none; /*Removes border*/
+  font-family: Georgia, 'Times New Roman', Times, serif; /*Sets font family*/
+  font-size: 18px; /*Sets font size*/
+}
+
+.subnavbutton:hover {
+  background-color: #95978E; /*Sets background color*/
+  color:#232727; /*Sets font color*/
+}
+
+.subnavcontent {
+  display: none; /*Fixes display*/
+  position: absolute; /*Fixes position*/
+  background-color:#928d86; /*Sets background color*/
+  min-width: 160px; /*Fixes minimum width*/
+  z-index: 1; /*Controls stacking order*/
+  top: 100%; /*Adjusts top position*/
+  left: 0; /*Adjusts left position*/
+  border-radius: 8px; /* Adds border radius */
+  margin-top: 1px; /* Adds spacing below the button */
+}
+
+.subnavcontent a {
+  color: #fff; /*Sets color*/
+  padding: 0.5rem 1rem; /*Adjusts padding*/
+  text-decoration: none; /*REmoves text decoration*/
+  display: block; /*Adjusts display*/
+  transition: display 0.3s ease-in-out; /*Adds transition*/
+}
+
+.subnavcontent a:hover {
+  background-color: #cdc9c2; /*Sets background color*/
+}
+
+/* Show the dropdown menu when the subnav button is hovered */
+.subnav:hover .subnavcontent {
+  display: block; /*Sets display*/
+  transition: background-color 0.5s ease; /*Adds transition*/
+
+}
+
+/* Additional CSS for better layout */
+.menu .subnav {
+  margin: 0 0.5rem; /* Adds spacing between subnav items */
+}
+
+.menu a,
+.subnavbutton {
+  border-radius: 4px; /* Optional: Adds slight rounding to links */
+  transition: background-color 0.5s ease; /*Adds transition*/
+}
+
+
+.body1 {
+  background: radial-gradient(circle, #bfb6af,  #a19b95); /* Define radial gradient colors */
+}
+
+/* Media for Responsive Design */
+@media only screen and (max-width: 1230px) {
+  
+  .menu a, .subnavbutton, .subnavcontent {
+    font-size: 18px; /*Sets font size*/
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menu {
+    flex-direction: row; /*Sets flex direction*/
+    justify-content:center; /*Adjusts justify-content to the center*/
+  }
+  
+  .menu a, .subnavbutton, .subnavcontent {
+    font-size: 16px; /*Sets font size*/
+  }
+}
+
+/* PROFILE */
+.profile {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Vertically center the content */
+  justify-content: flex-start; /* Align content to the left */
+  height: 95vh; /* Full height of the viewport */
+}
+
+.profile-img {
+  width: 40%; /*Adjust width for responsiveness*/
+  max-width: 400px; /*Added max-width*/
+  height: auto; /*Auto height*/
+  border-radius: 50%; /*Circular image*/
+  border: 2px solid #4a4a4a; /*Adds border*/
+  padding: 5px; /*Adds padding*/
+  margin-right: 2%; /*Adjust margins for responsiveness*/
+  margin-left: 3%; /*Adjust margins for responsiveness*/
+  margin-top: 15vh; /*Adjust margin-top for responsiveness*/
+}
+
+.name-container {
+  display: flex; /*Sets display*/
+  flex-direction: column; /*Adjusts flex direction*/
+  align-items: flex-start; /*Align items*/
+  color: #232727 /*Sets font color*/
+}
+
+.name-title {
+  font-family:'Times New Roman', Times, serif; /*Sets font family*/
+  font-weight: lighter; /*adjusts font weight*/
+  line-height: 1; /* Adjust line height for closer lines */
+  margin: 0; /* Remove default margin */
+  font-size: 12vw; /* Adjust font size for responsiveness */
+  margin-top: 3vh; /* Adjust margin-top */
+
+}
+
+.surname-title {
+  font-family:'Times New Roman', Times, serif; /*Sets font famaily*/
+  font-weight: lighter; /*Adjusts font weight*/
+  line-height: 0.5; /* Adjust line height for closer lines */
+  margin: 0; /* Remove default margin */
+  font-size: 14vw; /* Adjust font size for responsiveness */
+
+}
+
+.label{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*Sets font family*/
+  font-size: 2vw; /*Adjust font size for responsiveness*/
+  line-height: 3; /*Adjusts line height*/
+}
+
+.social-media {
+  position: fixed; /* Position the container absolutely*/
+  top: 23vh; /*Adjusts top position*/
+  display: flex; /*Uses flexbox layout*/
+  flex-direction: column; /*Arrange icons vertically*/
+  right: 3vh; /*Adjust right position for responsiveness*/
+  align-items: flex-end; /*Align items to the right*/
+
+}
+
+.social-icon {
+  color: #484346; /* Color of the icons */
+  margin-bottom: 100%; /* Space between icons */
+  text-decoration: none; /* Removes underline from links */
+  font-size: 3vw; /* Adjust the icon size */
+  transition: transform 0.3s ease; /*Adds transition*/
+
+}
+.social-icon:hover {
+  transform: scale(1.2); /* Icons will grow by 20% when hovered */
+}
+
+/* Adjust spacing for small screens */
+@media screen and (max-width: 1230px) {
+  .profile-img {
+    width: 40%; /* Adjust width for smaller screens */
+    margin-top: 10vh; /* Adjust margin-top for smaller screens */
+  }
+  
+  .name-title {
+    font-size: 9vw; /* Adjusted font size for smaller screens */
+    margin-top: 1vh; /* Adjusted margin-top for smaller screens */
+    margin-right: 0.5vw; /* Adjusted margin between name and surname */
+    display: inline-block; /* Display as inline-block on small screens */
+    line-height: 1;
+  }
+  
+  .surname-title {
+    font-size: 10vw; /* Adjusted font size for smaller screens */
+    margin-top: 0.5vh; /* Adjusted margin-top for smaller screens */
+    margin-left: 0.5vw; /* Adjusted margin between name and surname */
+    display: inline-block; /* Display as inline-block on small screens */
+    line-height: 1; /*Adds line height*/
+  }
+  
+  .label {
+    font-size: 2vw; /* Adjusted font size for smaller screens */
+  }
+  
+  .social-media {
+    top: 33vh; /* Reset top position */
+    bottom: 5vh; /* Adjusted bottom position for smaller screens */
+    right: 1%; /* Decrease right spacing */
+    align-items: center; /* Center items on small screens */
+  }
+  
+}
+
+/* Adjusted spacing for small screens */
+@media screen and (max-width: 800px) {
+  .profile-img {
+    width: 40%; /* Adjusted width for smaller screens */
+    margin-top: 5vh; /* Adjusted margin-top for smaller screens */
+  }
+  
+  .name-title {
+    font-size: 11vw; /* Adjusted font size for smaller screens */
+    margin-top: 1vh; /* Adjusted margin-top for smaller screens */
+    margin-right: 0.5vw; /* Adjusted margin between name and surname */
+    display: inline-block; /* Display as inline-block on small screens */
+    line-height: 1;
+  }
+  
+  .surname-title {
+    font-size: 12vw; /* Adjusted font size for smaller screens */
+    margin-top: 0.5vh; /* Adjusted margin-top for smaller screens */
+    margin-left: 0.5vw; /* Adjusted margin between name and surname */
+    display: inline-block; /* Display as inline-block on small screens */
+    line-height: 1;
+  }
+  
+  .label {
+    font-size: 3vw; /* Adjusted font size for smaller screens */
+  }
+  
+  .social-media {
+    top: auto; /* Reset top position */
+    bottom: 5vh; /* Adjusted bottom position for smaller screens */
+    right: 1%; /* Decrease right spacing */
+    align-items: center; /* Center items on small screens */
+  }
+  
+}
+
+/* ABOUT PAGE */
+
+.body2 {
+  background: radial-gradient(circle, #888a81, #d2cdc4); /* Define radial gradient colors */
+}
+
+.about .information {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row-reverse; /* Reverse the order of flex items */
+  align-items: center; /* Align items vertically */
+  margin-top: 5px;
+  height: 70vh; /* Full height of the viewport */
+
+}
+.pagetwoimage {
+  width: 35%; /*Adjusts width*/
+  height: 90%; /*Adjusts height*/
+  border-top-left-radius: 47%; /*Add border radius to the top left corner*/
+  border-top-right-radius: 47%; /*Add border radius to the top right corner*/
+  border: 2px solid black; /*Define the border*/
+  padding: 5px;
+  object-fit: cover; /*Maintain aspect ratio*/
+  margin-left: 3%; /*Add space between text and image*/
+  margin-right: 10%;
+  margin-bottom: 10vh;
+  
+}
+
+.text-info {
+  margin-right: 50; /* Reset the margin-right to default */
+  text-align: justify; /* Align text to the left */
+  margin-left: 80px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: lighter; /* Make the font thinner */
+  letter-spacing: 0.02em; /* Optional: Increase spacing between letters */
+  margin-bottom: 15px; /* Add margin between text sections */
+  font-size: 23px; /* Default font size */
+  padding: 15px;
+  margin-top: 0;
+}
+
+
+/* Media for responsiveness */
+@media only screen and (max-width: 1230px) {
+  .about .information {
+    flex-direction: column; /* Change flex direction to column for small screens */
+    height: auto; /* Auto height for small screens */
+  }
+
+  .pagetwoimage {
+    width: 70%; /* Adjust width for small screens */
+    height: auto; /* Auto height for small screens */
+    margin: 0 auto 20px; /* Center image and add margin */
+  }
+
+  .text-info {
+    margin-left: 0; /* Reset margin left for small screens */
+    margin-right: 0; /* Reset margin right for small screens */
+    font-size: 18px; /* Adjust font size for small screens */
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about .information {
+    flex-direction: column; /* Change flex direction to column for small screens */
+    height: auto; /* Auto height for small screens */
+  }
+
+  .pagetwoimage {
+    width: 70%; /* Adjust width for small screens */
+    height: auto; /* Auto height for small screens */
+    margin: 0 auto 20px; /* Center image and add margin */
+  }
+
+  .text-info {
+    margin-left: 0; /* Reset margin left for small screens */
+    margin-right: 0; /* Reset margin right for small screens */
+    font-size: 16px; /* Adjust font size for small screens */
+  }
+}
+
+/*PHOTOGRAPHY*/
+
+.body3 {
+  background: radial-gradient(circle, #928d86, #b5b1a8); /* Define radial gradient colors */
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif; /*Sets font*/
+  text-align: center; /*Aligns text to the center*/
+  font-size: 50px; /*Sets font size*/
+  padding-top: 15vh; /*Adds padding in the top*/
+  margin-bottom: 20px; /*Adds margin on the bottom*/
+  color: #232727; /*Sets font color*/
+}
+
+.image-container {
+  display: flex; /*Adjusts display*/
+  flex-wrap: wrap; /*Adjusts flex*/
+  justify-content: center; /*Puts justify-content in the center*/
+}
+
+.image-container > div {
+  margin: 0 1%; /*Adds margin*/
+  width: 300px; /*Adjusts width*/
+  border: 1px solid #ccc; /*Adds border*/
+  background-color: white; /*Sets background color*/
+  padding: 10px; /*Sets padding*/
+  height: 470px; /*Sets height*/
+  margin-bottom: 20px; /*Adds margin in the bottom*/
+}
+
+.image-container > div:hover {
+  border: 1px solid #232727; /*Adds border*/
+}
+
+.image-container > div img {
+  width: 100%; /*Sets width*/
+  height: auto; /*Sets height to auto*/
+  display: block; /*Sets display*/
+}
+
+p.description {
+  padding: 15px; /*Adds padding*/
+  text-align: center; /*Align text to the center*/
+}
+
+/* Media for responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px; /*Sets font size*/
+  }
+  
+  .image-container > div {
+    width: 45%; /*Adjust width for smaller screens*/
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 30px; /*Sets font size*/
+  }
+  
+  .image-container > div {
+    width: 60%; /*Adjust width for even smaller screens */
+    margin: 0 auto 20px; /* Center align and add bottom margin*/
+  }
+}
+
+/* VIDEO PROJECTS PAGE */
+
+.body4{
+  background: radial-gradient(circle, #dad4cf,  #a09d90); /* Define radial gradient colors */
+
+}
+
+.videoprojects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.videoprojects h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+  width: 100%;
+}
+
+.video-container {
+  width: calc(33.33% - 40px); /* Adjust this value based on your layout */
+  margin: 20px; /* Adds margin */
+  position: relative; /* Sets position*/
+  overflow: hidden; /* Hides overflow*/
+  border-radius: 10px; /* Add border radius to video container */
+  margin-top: 60px; /*Adds margin on top*/
+}
+
+.video-container video {
+  width: 100%; /*Fixes width*/
+  height: auto; /* Sets height*/
+  border-radius: 10px; /* Add border radius to video */
+}
+
+.video-container:before {
+  content: ''; /*Inserts empty string as content*/
+  position: absolute; /*Positions element aboslutely*/
+  top: 0; /*Removes default top position*/
+  left: 0; /*Removes default left position*/
+  right: 0; /*Removes default right position*/
+  bottom: 0; /*Removes default bottom position*/
+  border: 5px solid #333131; /* Border color */
+  border-radius: 10px; /* Adjust border radius as needed */
+}
+
+.video-container:hover:before {
+  border-color: #6e766c; /* Change border color on hover */
+}
+
+/* Media Responsiveness */
+@media (max-width: 768px) {
+  .video-container {
+    width: calc(70% - 40px); /* Adjust container width for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .video-container {
+    width: calc(100% - 40px); /* Adjust container width for even smaller screens */
+  }
+}
+
+
+/* GRAPHIC DESIGN PAGE */
+
+.body5 {
+  background: radial-gradient(circle, #cac2bb,  #b5b2a5); /* Define radial gradient colors */
+  
+}
+
+h2 {
+  margin-top: 60px; /*Adds margin on the top*/
+  font-family: Georgia, 'Times New Roman', Times, serif; /*Sets font*/
+}
+
+.graphicdesign {
+  text-align: center; /*Aligns to the center*/
+  transition: text-align 0.5s ease-in-out; /* Smooth text-align transition */
+}
+
+.logodesign img {
+  width: 50%; /*Adjusts the width*/
+  height: auto; /* To maintain aspect ratio */
+  margin-bottom: 60px; /*Adds margin to the bottom*/
+  margin-top: 20px; /*Adds marign to the top*/
+  margin-left: 50px; /*Adds margin on the left*/
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /*Interactive transition with cubic-bezier timing function */
+}
+
+.logodesign img:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+}
+
+.tee01 img,
+.tee02 img {
+  width: 100%; /*Adjust the width*/
+  height: auto; /*Adjust height*/
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /*Adds transition*/
+}
+
+.tee01 img:hover{
+  transform: scale(1.1); /*Enlarge the image on hover*/
+}
+
+
+.tee02 img:hover{
+  transform: scale(1.1); /*Enlarge the image on hover*/
+}
+
+.graphic-tees {
+  display: flex; /*Adjusts display*/
+  justify-content: center; /*Aligns justify content to the center*/
+  align-items: center; /*Align items on the center*/
+  margin-top: 20px; /*Adds margin on top*/
+  transition: margin-top 0.5s ease-in-out; /*Smooth margin-top transition*/
+}
+
+.graphic-tees > div {
+  margin: 0 50px; /*Adjusts margin*/
+}
+
+.graphic-tees h3 {
+  margin-bottom: 10px; /*Adds margin on the bottom*/
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*Sets font family*/
+}
+
+/* Media for smaller screens */
+@media (max-width: 768px) {
+  .logodesign img {
+    margin-left: 0; /* Centering the image */
+    width: 70%;
+  }
+  
+  .graphic-tees > div {
+    margin: 0 20px; /* Adjusting margin for smaller screens */
+  }
+}
+
+
+/*SKILLS*/
+
+.body6{
+  background: radial-gradient(circle, #817b6d,  #cac2bb); /* Define radial gradient colors */
+}
+
+h5{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Sets font*/
+}
+
+.skills {
+  display: grid; /*Adjusts display*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*repeats grid*/
+  gap: 30px; /*Adds gap*/
+  margin-top: 5vh; /*Adds margin on the top*/
+  margin-left: 5vh; /*Adds margin on the left*/
+  margin-right: 5vh; /*Adds margin on the right*/
+  margin-bottom: 5vh; /*Adds margin on the bottom*/
+
+}
+
+.skills > div {
+  background-color: #dbd2ce; /*Sets background color*/
+  border-radius: 10px; /*Makes corner curved*/
+  padding: 15px; /*Adds padding*/
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /*Adds shadow to the box*/
+  transition: transform 0.3s ease; /*Adds transition*/
+}
+
+.skills > div:hover {
+  transform: translateY(-5px); /*translates element on Y axis*/
+}
+
+.skills h5 {
+  font-size: 1.5rem; /*Sets font size*/
+  margin-bottom: 10px; /*Adds margin on the bottom*/
+  color: #333; /*Sets font color*/
+}
+
+.skills p.desc {
+  font-size: 1rem; /*Adds font size*/
+  line-height: 1.6; /*Adds line height*/
+  color: #666; /*Sets color*/
+}
+
+@media (max-width: 768px) {
+  .skills {
+      grid-template-columns: 1fr; /*fixes grid template column*/
+  }
+}
+
+/*WORK WITH ME - SERVICES*/
+
+.body7{
+  background: radial-gradient(circle,  #ada6a0, #9e9686); /* Define radial gradient colors */
+}
+
+.services {
+  text-align: center; /*Aligns text to the center*/
+}
+
+/* Styling for the ID card container */
+#id-card {
+  display: flex; /*Adjusts display*/
+  flex-direction: column; /*Adjusts flex direction*/
+  align-items: center; /*Align items to the center*/
+  margin: 40px auto; /*Center the container horizontally*/
+  border: 1px solid #ddd; /*Add border*/
+  border-radius: 10px; /*Add border radius*/
+  padding: 20px; /*Add padding*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Add shadow*/
+  max-width: 400px; /*Set maximum width*/
+  width: 90%; /*Set width to 90%*/
+  background-color: #b5b1a8; /*Sets background color*/
+  transition: transform 0.3s ease; /*Add transition effect for transform*/
+
+}
+
+/* Styling for the ID image */
+.id-image img {
+  max-width: 200px; /*Adjusts max width*/
+  border-radius: 50%; /*Makes the corner curved*/
+  margin-bottom: 20px; /*Adds margin on the bottom*/
+  border: 2px solid #4A4B44; /* Adding a border to the image */
+  padding: 10px; /*Adds padding*/
+}
+
+/*Styling for social media links*/
+.whatsapp,
+.email {
+  display: flex; /*Adjusts display*/
+  align-items: center; /*Align items to the center*/
+  margin-top: 10px; /*Adds margin on top*/
+}
+
+/*Styling for social media icons*/
+.whatsapp i,
+.email i {
+  font-size: 24px; /*Sets font size*/
+  margin-right: 10px; /* Adjust margin to separate icon from user info */
+}
+
+/*Styling for user info*/
+.user {
+  font-size: 18px; /*Sets font size*/
+  color: #484346; /*Sets font color*/
+}
+
+/*Align icons to the left*/
+.whatsapp i,
+.email i {
+  order: -1; /*Sets order*/
+}
+
+/*Align user info to the right*/
+.user {
+  margin-left: auto; /*Sets margin*/
+}
+
+/*Hover effect for social media icons*/
+.whatsapp i:hover,
+.email i:hover {
+  color: #007bff; /*Change color on hover*/
+  cursor: pointer; /*Show pointer cursor on hover*/
+}
+
+/*Hover effect for the card*/
+#id-card:hover {
+  transform: scale(1.05); /*Scale up on hover*/
+}
